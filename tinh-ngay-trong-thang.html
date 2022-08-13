@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số ngày trong tháng</title>
+</head>
+<body>
+<h2>Kiểm tra số ngày trong tháng</h2>
+<input id="month" />
+<script>
+let Month = parseInt(document.getElementById("month").value);
+    switch (Month) {
+        case 2 :
+            document.writeln("Tháng có 29 ngày");
+            break;
+        case 1 :
+        case 3 :
+        case 5 :
+        case 7 :
+        case 8 :
+        case 10 :
+        case 12 :
+            document.writeln("Tháng có 31 ngày");
+            break;
+        case 4 :
+        case 6 :
+        case 9 :
+        case 11 :
+            document.writeln("Tháng có 30 ngày");
+            break;
+    }
+
+</script>
+<button onclick="Month">check</button>
+</body>
+</html>
